@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Modern:wght@100..400&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Okra';
+  src: url('../../public/assets/fonts/okra/Okra-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section-animation-elements {
+  will-change: transform, width, left, right, top, clip-path;
+}
+
+.bm-menu {
+  background: white;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: white;
+}
+
+/* Removing number input arrows */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.testimonial-dot-list {
+  /* background-color: blueviolet; */
+  opacity: 0.5;
+  position: absolute;
+  left: calc(33% + 12px + 5%) !important;
+  bottom: calc(5% + 35px) !important;
+  display: flex;
+  width: fit-content;
+  
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
